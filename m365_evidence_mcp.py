@@ -155,5 +155,9 @@ def privileged_roles() -> str:
     return "\n".join(out) or "No activated role has members."
 
 
-if __name__ == "__main__":
+def main():
     server.run()
+
+
+if __name__ == "__main__":
+    main()

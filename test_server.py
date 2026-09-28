@@ -3,7 +3,7 @@
 import os
 from datetime import datetime, timezone
 
-import server
+import m365_evidence_mcp as server
 
 RECENT = datetime.now(timezone.utc).isoformat()
 

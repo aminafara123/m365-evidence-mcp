@@ -31,7 +31,7 @@ The Access token tab in Graph Explorer works too. Scopes: SecurityEvents.Read.Al
 Wire it into Claude Code:
 
 ```bash
-claude mcp add m365evidence -- /path/to/m365-evidence-mcp/.venv/bin/python /path/to/m365-evidence-mcp/server.py
+claude mcp add m365evidence -- /path/to/m365-evidence-mcp/.venv/bin/python /path/to/m365-evidence-mcp/m365_evidence_mcp.py
 ```
 
 ## Demo

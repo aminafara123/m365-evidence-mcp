@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "m365-evidence-mcp"
+version = "1.0.0"
+description = "MCP server over Microsoft Graph: four read-only audit evidence tools any AI client can call"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [{name = "Al Amin Bashir Afara"}]
+requires-python = ">=3.10"
+dependencies = ["mcp"]
+keywords = ["mcp", "microsoft-graph", "it-audit", "grc", "secure-score", "audit-evidence"]
+
+[project.urls]
+Homepage = "https://github.com/aminafara123/m365-evidence-mcp"
+Repository = "https://github.com/aminafara123/m365-evidence-mcp"
+
+[project.scripts]
+m365-evidence-mcp = "m365_evidence_mcp:main"
+
+[tool.setuptools]
+py-modules = ["m365_evidence_mcp"]
