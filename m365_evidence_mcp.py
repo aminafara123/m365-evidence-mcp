@@ -5,9 +5,9 @@ The four Graph reads an IT auditor keeps repeating, exposed as tools any
 MCP-capable model can call: secure score, MFA coverage, stale accounts,
 privileged role membership. Every tool is a GET, nothing writes.
 
-Run (stdio):  GRAPH_TOKEN=<token> python server.py
+Run (stdio):  GRAPH_TOKEN=<token> m365-evidence-mcp
 Wire into Claude Code:
-  claude mcp add m365evidence -- /path/to/.venv/bin/python /path/to/server.py
+  claude mcp add m365evidence -- m365-evidence-mcp
 """
 
 import json

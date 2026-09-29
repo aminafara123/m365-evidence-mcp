@@ -16,6 +16,12 @@ The four tools cover ITGC classics: security posture, MFA coverage, dormant acco
 ## Setup
 
 ```bash
+pipx install m365-evidence-mcp
+```
+
+`uvx m365-evidence-mcp` works too if you prefer no install. Hacking on a clone instead:
+
+```bash
 python3 -m venv .venv
 .venv/bin/pip install mcp
 ```
@@ -29,6 +35,12 @@ export GRAPH_TOKEN=$(az account get-access-token --resource https://graph.micros
 The Access token tab in Graph Explorer works too. Scopes: SecurityEvents.Read.All for the score, Reports.Read.All for MFA coverage, User.Read.All plus AuditLog.Read.All for stale accounts, Directory.Read.All for roles. All of them are read scopes and most need admin consent.
 
 Wire it into Claude Code:
+
+```bash
+claude mcp add m365evidence -- m365-evidence-mcp
+```
+
+Running from a clone, point it at the venv instead:
 
 ```bash
 claude mcp add m365evidence -- /path/to/m365-evidence-mcp/.venv/bin/python /path/to/m365-evidence-mcp/m365_evidence_mcp.py
