@@ -1,5 +1,7 @@
 # m365-evidence-mcp
 
+<!-- mcp-name: io.github.aminafara123/m365-evidence-mcp -->
+
 An MCP server that turns the Microsoft Graph reads an IT auditor keeps repeating into tools any MCP-capable AI client can call. Point it at a tenant with a read-only token and ask for the evidence in plain language instead of clicking through four admin portals.
 
 The four tools cover ITGC classics: security posture, MFA coverage, dormant accounts and privileged access. The model fetches, the auditor concludes.
